@@ -1,0 +1,213 @@
+.s-contact {
+    background-color: #151515;
+    background-image: url(../contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    height:150vh;
+    padding-bottom: 50px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background-color: #151515;
+}
+.pt{
+    padding-top: 80px;
+}
+.chead{
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 2rem !important;
+    line-height: 1.333;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#005bc5;
+    font-size: 24px;
+    font-weight: 900;
+}
+.display2{
+    margin-top: 0.6rem;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    font-weight: bolder;
+    font-family: "montserrat-medium", sans-serif;
+    line-height: 1.255;
+    padding-bottom: 30px;
+}
+.row{
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-content{
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+}
+.contact-primary{
+    width: 65%;
+}
+.contact-primary, .contact-secondary{
+    float: left;
+    padding: 4rem 5rem;
+}
+.contact-content h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #FFFFFF;
+}
+h6, .h6 {
+    font-size: 1rem;
+    line-height: 1.385;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+.contactForm {
+    margin-top: -1.5rem;
+}
+.form-field {
+    position: relative;
+}
+.contact-content{
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    margin-bottom: 0.9rem;
+}
+textarea {
+    min-height: 20rem;
+}
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,.btn--primary, select {
+    display: block;
+    height: 4.8rem;
+    padding: 0rem 0;
+    border: 0;
+    outline: none;
+    color: #333333;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1rem;
+    line-height: 3rem;
+    max-width: 100%;
+    background: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.full-width{
+    width:100%;
+}
+.btn--primary{
+    z-index: 500;
+    background-color:#005bc5;
+    color:azure;
+    opacity: 1 !important;
+    margin-top: 20px;
+    padding: 0;
+    margin-top:0px;
+    max-height: 60px;
+}
+.contact-secondary {
+    width: 35%;
+    background-color: #000;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.contact-secondary .contact-info {
+    position: relative;
+}
+.contact-secondary .cinfo {
+    margin-bottom: 4.8rem;
+}
+.cinfo h5{
+    color:#ffdaab;
+    font-size: 1.2rem;
+}
+.cinfo p{
+    color:#ddffab;
+    font-size: 1rem;
+}
+.cinfo a{
+    text-decoration: none;
+}
+.icon{
+    height:35px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+.s-contact {
+    padding-top: 12rem;
+    padding-bottom: 0;
+    height:199vh;
+}
+.row{
+    width:100%;
+}
+.display2{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.8rem 0.4rem;
+}
+.chead{
+    font-size: 1rem;
+}
+.contact-primary{
+    width:100%;
+    padding:25px 50px 20px 25px;
+}
+.contact-secondary{
+    width:100%;
+    padding:0 2.5px;
+    float:none;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.contact-primary .contact-secondary{
+    float:none;
+}
+.contact-content h3{
+    margin-bottom: 2rem;
+    padding: 30px 0px;
+    text-align: center;
+}
+.form-field{
+    height:4rem;
+}
+.msg{
+    height:auto;
+} 
+textarea{
+    min-height:15rem;
+}
+.hide-on-fullwidth{
+    display:none;
+}
+.contact-secondary{
+    padding-top: 3rem;
+}
+.cinfo h5{
+    font-size: 1rem;
+}
+.cinfo p{
+    font-size: 0.8rem;
+}
+}

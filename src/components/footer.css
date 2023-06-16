@@ -1,0 +1,17 @@
+.footer {
+    padding: 3rem 0 3rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    background-color: black;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+.copyright span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+.copyright span a{
+    text-decoration: none;
+    color:#ddffab;
+}

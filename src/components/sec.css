@@ -1,0 +1,62 @@
+.joinus{
+    padding-top: 9rem;
+    width:100vw;
+    background-color: white;
+}
+.sh2{
+    color : #005bc5;
+    font-weight: bolder;
+}
+.shb{
+    font-size:3rem;
+    font-weight: bolder;
+    color:black;
+}
+.Hr{
+    width:750px;
+}
+.pad__join{
+    padding:40px 160px
+}
+.icons{
+    font-size: 36px;
+    color:#005bc5;
+    padding: 10px 20px;
+}
+.sbhc{
+    font-size: 2rem;
+    text-align: Left;
+    align-items: middle;
+    color:black;
+}
+.pd-20{
+    padding:20px 0px;
+}
+.card__sw{
+    display:block;
+    width:350px !important;
+}
+.card__data{
+    font-size: 20px;
+    text-align: left;
+}
+@media screen and (max-width:400px) {
+    .pad__join{
+        padding:0px 10px;
+    }
+    .Hr{
+        width:320px;
+    }
+    .card__data{
+        text-align: center;
+    }
+    .sbhc{
+        text-align: center;
+    }
+    .icons{
+        padding-bottom:10px;
+    }
+    .shb{
+        font-size: 1.7rem;
+    }
+}

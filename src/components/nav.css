@@ -1,0 +1,32 @@
+.flex{
+display:flex;
+}
+.sb{
+    justify-content: space-evenly;
+}
+.br{
+    position: relative;
+    top:20%;
+    right:20px;
+}
+.link{
+    display:block;
+    position: relative;
+    color: aliceblue !important;
+    top:25%;
+    right:20px;
+    float:right;
+    font-size: 20px;
+}
+.inactive{
+    background-color:transparent;
+}
+.active{
+    background-color: rgb(66, 97, 158);
+    animation: ease-in;
+}
+@media screen and (max-width:800px) {
+    .link{
+        display:none
+    }
+}
