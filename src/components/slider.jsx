@@ -2,9 +2,13 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components'
-import { sliderItem } from '../data'
+import { postBearers } from '../data'
 import {mobile} from "../responsive"
 import './slider.css'
+import fontawesome from '@fortawesome/fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faYoutube, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+fontawesome.library.add(faFacebookF,faYoutube,faInstagram,faLinkedin);
 
 const Container = styled.div`
 width:100%;
@@ -49,7 +53,6 @@ height:100vh;
 display:flex;
 justify-content: space-around;
 align-items:center;
-background-color:#${props=>props.bg};
 `
 
 const Head = styled.h1`
@@ -60,14 +63,18 @@ const Head = styled.h1`
   text-align: center;
   padding-top: 50px;
 `
+const Card= styled.div`
+    background-image: url(${props=>props.img});
+`
+
 const Slides = () => {
     const [slideIndex,setSlideIndex] = useState()
     const handleClick = (direction)=>{
         if(direction==="left"){
-            setSlideIndex(slideIndex>0? slideIndex-1:2)
+            setSlideIndex(slideIndex>0? slideIndex-1:14)
         }
         else{
-            setSlideIndex(slideIndex<2? slideIndex+1 :0)
+            setSlideIndex(slideIndex<14? slideIndex+1 :0)
         }
     }
   return (
@@ -81,21 +88,23 @@ const Slides = () => {
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
             {
-                sliderItem.map((item)=>(
+                postBearers.map((item)=>(
                 <Slide key={item.id}>
-        <div className="containr">
+        <Card className="containr" img={item.img}>
             <div className="gradient">
                 <div className="content">
-                    <h2>DAVID <br/> BACKHAM</h2>
-                    <p>27 years,Los Angeles,USA</p>
+                    <h2>{item.name}</h2>
+                    <p className='post'>{item.post}</p>
                     <br/>
-                    <p className="details">I am a digital marketing Manager working in Lisbon. I like to travel across the world</p>
+                    <br/>
                     <div className="icons">
-                        
+                        <FontAwesomeIcon icon="fa-brands fa-facebook-f" className="icon"/>
+                        <FontAwesomeIcon icon="fa-brands fa-instagram" className="icon"/>
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" className="icon"/>
                     </div>
                 </div>
             </div>
-        </div>
+        </Card>
                 </Slide>
                 ))
             }
