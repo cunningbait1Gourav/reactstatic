@@ -1,5 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import React from 'react'
+import { Link,BrowserRouter } from 'react-router-dom'
 import { useState } from 'react'
 import styled from 'styled-components'
 import { postBearers } from '../data'
@@ -10,13 +11,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faYoutube, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 fontawesome.library.add(faFacebookF,faYoutube,faInstagram,faLinkedin);
 
+
 const Container = styled.div`
 width:100%;
 height:100%;
 display:flex;
 position:relative;
 overflow:hidden;
-${mobile({display:"none"})}
 `
 const Arrow = styled.div`
 width:50px;
@@ -58,10 +59,12 @@ align-items:center;
 const Head = styled.h1`
   color:white;
   font-size:3rem;
+  font-family: "montserrat-medium", sans-serif;
   align-items: center;
   align-self: center;
   text-align: center;
   padding-top: 50px;
+  ${mobile({ fontSize:'1.5rem'})}
 `
 const Card= styled.div`
     background-image: url(${props=>props.img});
@@ -93,15 +96,18 @@ const Slides = () => {
         <Card className="containr" img={item.img}>
             <div className="gradient">
                 <div className="content">
-                    <h2>{item.name}</h2>
-                    <p className='post'>{item.post}</p>
-                    <br/>
-                    <br/>
-                    <div className="icons">
-                        <FontAwesomeIcon icon="fa-brands fa-facebook-f" className="icon"/>
-                        <FontAwesomeIcon icon="fa-brands fa-instagram" className="icon"/>
-                        <FontAwesomeIcon icon="fa-brands fa-linkedin" className="icon"/>
+                <h2>
+                        {item.name}</h2>
+                    <div className='icons'>
+                        <div>
+                        <p className='post'>{item.post}</p>
+                        </div>
+                        <BrowserRouter>
+                        <Link to={item.LinkdeIn}><FontAwesomeIcon icon="fa-brands fa-linkedin" className="icon"/></Link>
+                        </BrowserRouter>
                     </div>
+                    <br/>
+                    <br/>
                 </div>
             </div>
         </Card>

@@ -22,7 +22,7 @@ const About = ()=>{
                 <hr></hr>
             </h1>
             <div className='flex r content__about' data-aos="fade-up">
-                <p>Rotaract Club of Sindri is the youth wing of Rotary International aimed at organizing various socio-cultural events and developing managerial skills. Our main purpose is to provide an opportunity for young men and women to enhance the knowledge and skills that will assist them in personal development, to address the physical and social needs of their communities, and to promote better relations between all people worldwide through a framework of friendship and service.</p>
+                <p className='content__desc'>Rotaract Club of Sindri is the youth wing of Rotary International aimed at organizing various socio-cultural events and developing managerial skills. Our main purpose is to provide an opportunity for young men and women to enhance the knowledge and skills that will assist them in personal development, to address the physical and social needs of their communities, and to promote better relations between all people worldwide through a framework of friendship and service.</p>
             </div>
             <div className='flex r se' data-aos="fade-up">
                 <div className='flex cen'>

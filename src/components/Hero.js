@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../hero-bg.jpg";
+import background from "../hero-bg.JPG";
 import { Button } from "react-bootstrap";
 import "./Hero.css"
 import { useEffect } from 'react';

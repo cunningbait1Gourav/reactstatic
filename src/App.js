@@ -29,8 +29,8 @@ function App() {
     <Navbar></Navbar>
     <Hero></Hero>
     <About></About>
-    <Secjoin></Secjoin>
     <EventSlider/>
+    <Secjoin></Secjoin>
     <Slides></Slides>
     <ContactUs></ContactUs>
     <Footer/>
