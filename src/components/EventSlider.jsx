@@ -4,6 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { rotoEvents } from "../data";
 import { mobile } from "../responsive";
+import background from "../protruding-squares.png"
 
 const Container = styled.div`
   width: 100%;
@@ -11,7 +12,6 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ display: "none" })}
 `;
 const Arrow = styled.div`
   width: 50px;
@@ -36,6 +36,8 @@ const Wrapper = styled.div`
   display: flex;
   transition: all 1.5s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
+  background-size: 100px 50px;
+  background-image: url(${background});
 `;
 const Slide = styled.div`
   width: 100vw;
@@ -43,7 +45,6 @@ const Slide = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #294380;
 `;
 const ImageContainer = styled.div`
   height: 100%;
@@ -56,6 +57,7 @@ const Image = styled.img`
   position: relative;
   top:30px;
   padding-left: 10px;
+  ${mobile({ maxHeight:"125px" })}
 `;
 const InfoContainer = styled.div`
   flex: 1;
@@ -64,6 +66,7 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   font-size: 40px;
   color:aliceblue;
+  ${mobile({ fontSize:"20px",position:"relative",bottom:"30px" })}
 `;
 const Desc = styled.p`
   margin: 50px 0px;
@@ -71,6 +74,7 @@ const Desc = styled.p`
   font-weight: 500;
   letter-spacing: 3px;
   color:aliceblue;
+  ${mobile({ fontSize:"10px",position:"relative",bottom:"60px",maxHeight:"300px",overflowY:"hidden" })}
 `;
 const Cards = styled.div`
     width:70%;
@@ -78,6 +82,8 @@ const Cards = styled.div`
     align-items: center;
     box-shadow: 0 10px 20px black;
     height:550px;
+    background-color: rgba(28, 104, 139, 0.7);
+    ${mobile({ flexDirection: "column" })}
 `
 
 const EventSlider = () => {

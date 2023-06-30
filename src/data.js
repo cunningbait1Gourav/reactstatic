@@ -290,7 +290,7 @@ export const rotoEvents=[
         date:"1st May,2023",
         name:"Rudrabhishek Puja",
         desc:"Carrying on with our traditions, the Rotaract club of BIT Sindri performed Rudrabhishek Puja in Baba Thaneshwar Bhootnath Mandir, BIT Sindri, on May 1, 2023.Under the guidance of the priest, all rituals were practiced by the members. The ceremony was followed by the chanting of mantras, hawan, and Pushpanjali. After the puja, offerings were distributed among the devotees. Rudrabhishek Puja is performed to alleviate one's sufferings and bring prosperity to one's family.",
-        img:"https://res.cloudinary.com/dhxpfw6in/image/upload/v1687366540/rotoract/events/IMG_2778_d8udnh.heic"
+        img:"https://res.cloudinary.com/dhxpfw6in/image/upload/v1687366529/rotoract/events/1683295461664_fwvbdw.jpg"
     },
     {
         id:21,

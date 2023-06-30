@@ -22,7 +22,7 @@ display:flex;
     background-color:transparent;
 }
 .active{
-    background-color: rgb(66, 97, 158);
+    background-color: #2097EE;
     animation: ease-in;
 }
 @media screen and (max-width:800px) {

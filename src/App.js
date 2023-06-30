@@ -25,7 +25,7 @@ const Main = styled.div`
 
 function App() {
   return (
-<Main style={{overflowX:"hidden",overflowY:"auto"}}>
+<Main style={{overflow:"hidden"}}>
     <Navbar></Navbar>
     <Hero></Hero>
     <About></About>

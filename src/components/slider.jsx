@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import { postBearers } from '../data'
 import {mobile} from "../responsive"
 import './slider.css'
+import background from "../protruding-squares.png"
 import fontawesome from '@fortawesome/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faYoutube, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -38,7 +39,8 @@ opacity:0.5;
 z-index:2;
 `
 const Section = styled.div`
-    background-color:#005bc5;
+    background-size: 100px 50px;
+    background-image: url(${background});
     align-items: center;
     align-self: center;
 `

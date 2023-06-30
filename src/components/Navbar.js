@@ -96,7 +96,7 @@ function OffCanvasExample({ name, ...props }) {
         {/* <Button variant="primary" onClick={handleShow} style={{position:"realtive",top:"200px",left:"300px",zIndex:"1000"}}>
           {name}
         </Button> */}
-        <Offcanvas show={show} onHide={handleClose} {...props} style={{backgroundColor:"black",color:"#fff"}}>
+        <Offcanvas show={show} onHide={handleClose} {...props} style={{backgroundColor:"black",color:"#fff",width:"50%"}}>
           <Offcanvas.Header closeButton closeVariant="white" style={{backgroundColor:"black"}}>
             <Offcanvas.Title>Menu</Offcanvas.Title>
           </Offcanvas.Header>

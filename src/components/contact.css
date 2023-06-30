@@ -7,7 +7,7 @@
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
-    height:150vh;
+    height:165vh;
     padding-bottom: 50px;
 }
 .overlay {
@@ -157,7 +157,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 .s-contact {
     padding-top: 12rem;
     padding-bottom: 0;
-    height:199vh;
+    height:250vh;
 }
 .row{
     width:100%;

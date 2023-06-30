@@ -3,6 +3,9 @@
     width:auto;
     cursor:pointer;
 }
+.pl{
+    padding-left: 5px;
+}
 .name{
     display: none ;
     font-size: 18px;
